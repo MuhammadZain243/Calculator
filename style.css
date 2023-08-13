@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff6e7f, #bfe9ff);
+}
+
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 50px;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.container input {
+    grid-column: 1/span 4;
+    width: 100%;
+    padding: 10px;
+    font-size: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    text-align: right;
+    box-sizing: border-box;
+    font-weight: normal;
+}
+
+.container button {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.container button:hover {
+    background-color: #ddd;
+}
+
+.container .btn.equal {
+    grid-column: 1/span 4;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: right;
+    box-sizing: border-box;
+    background-color: #4CAF50;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.container .btn.equal:hover {
+    background-color: #4fcc53;
+}
+
+
+
+.container .btn.clear {
+    grid-column: 1 / span 2;
+    background-color: #f44336;
+    color: #fff;
+    font-weight: bold;
+}
+.container .btn.clear:hover {
+    background-color: #e23b2f;
+}
+
+.container .btn.power, .container .btn.square_root {
+    font-size: 18px;
+    background-color: #008CBA;
+    color: #fff;
+    font-weight: bold;
+}
+
+.container .btn.div, .container .btn.mul, .container .btn.sub, .container .btn.add{
+    background-color: #E91E63;
+    color: white;
+    font-weight: bold;
+}
+
+.container .btn.div:hover,.container .btn.mul:hover,.container .btn.sub:hover,.container .btn.add:hover{
+    background-color: #8d123b;
+}
